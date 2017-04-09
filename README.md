@@ -1,6 +1,7 @@
 # HumanNameParse.java
 
 Java port Author: Bruno P. Kinoshita
+(Steve Ash is just publishing this fork to Maven Central to make it available for some of my OSS projects; Im not contributing anything to this parser)
 
 Original library Author: Jason Priem jason@jasonpriem.com (credits go to him)
 Original library Author Website: http://jasonpriem.com/human-name-parse
@@ -24,12 +25,14 @@ and parses out the:
 * suffix (like 'Jr.', 'III')
 
 ## Usage
+This is available on maven central as:
 
 ```
 <dependencies>
   <dependency>
-    <groupId>com.tupilabs</groupId>
+    <groupId>com.github.steveash.hnp</groupId>
     <artifactId>human-name-parser</artifactId>
+    <version>0.1</version>
   </dependency>
 </dependencies>
 ```
