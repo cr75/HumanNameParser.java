@@ -3,6 +3,11 @@
 Java port Author: Bruno P. Kinoshita
 (Steve Ash is just publishing this fork to Maven Central to make it available for some of my OSS projects; Im not contributing anything to this parser)
 
+Also it should be noted that this is a relatively naive name parser; and 
+its implementation is highly unoptimized. I (steve ash) do not recommend using this in any production situations where
+performance is sensitive. I am only publishing it on maven central to include as a 
+sample parser to demonstrate the integration of a name parser into Syngen.
+
 Original library Author: Jason Priem jason@jasonpriem.com (credits go to him)
 Original library Author Website: http://jasonpriem.com/human-name-parse
 

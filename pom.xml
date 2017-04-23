@@ -62,17 +62,18 @@
   </properties>
 
   <developers>
-    <developer>
-      <email>kinow@apache.org</email>
-      <id>kinow</id>
-      <name>Bruno P. Kinoshita</name>
-      <timezone>-3</timezone>
-      <url>http://www.kinoshita.eti.br</url>
-      <roles>
-        <role>developer</role>
-      </roles>
-    </developer>
-  </developers>
+      <developer>
+        <email>kinow@apache.org</email>
+        <id>kinow</id>
+        <name>Bruno P. Kinoshita</name>
+        <timezone>-3</timezone>
+        <url>http://www.kinoshita.eti.br</url>
+        <roles>
+          <role>developer</role>
+        </roles>
+      </developer>
+    </developers>
+
 
   <issueManagement>
     <system>GitHub</system>
