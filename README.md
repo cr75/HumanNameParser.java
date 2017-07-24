@@ -6,7 +6,9 @@ Java port Author: Bruno P. Kinoshita
 Also it should be noted that this is a relatively naive name parser; and 
 its implementation is highly unoptimized. I (steve ash) do not recommend using this in any production situations where
 performance is sensitive. I am only publishing it on maven central to include as a 
-sample parser to demonstrate the integration of a name parser into Syngen.
+sample parser to demonstrate the integration of a name parser into Syngen. I did make a number
+of changes to just make it usable, but I would love it if someone would publish a competitive 
+open-source parser
 
 Original library Author: Jason Priem jason@jasonpriem.com (credits go to him)
 Original library Author Website: http://jasonpriem.com/human-name-parse
@@ -37,15 +39,22 @@ This is available on maven central as:
   <dependency>
     <groupId>com.github.steveash.hnp</groupId>
     <artifactId>human-name-parser</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
   </dependency>
 </dependencies>
 ```
 
 ```
-Name object = new Name("Sérgio Vieira de Mello");
-HumanNameParserParser parser = new HumanNameParserParser(object);
-String firstName = parser.getFirst();
-String nicknames = parser.getNicknames();
+HumanNameParser parser = new HumanNameParser();
+ParsedName name = parser.parse("Sérgio Vieira de Mello")
+for (int i = 0; i < name.size(); i++) {
+  name.getToken(i);  // the i-th token
+  name.getLabel(i);  // the label for that token
+}
+// or access the name as segmented into first, middle, last, etc.
+SegmentedName segName = name.toSegmented();
+
+String firstName = segName.getFirst(); // Sergio
+String nicknames = segName.getLast();  // de Mello (note its not smart it doesn't know name cultural practices) 
 // ...
 ```

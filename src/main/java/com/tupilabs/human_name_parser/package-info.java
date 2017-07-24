@@ -23,19 +23,9 @@
  */
 
 /**
- * <p>Human name parser.</p>
- *
- * <p>The {@link com.tupilabs.human_name_parser.HumanNameParserParser} is capable of parsing
- * names and extract leading init letters, first, last and middle name, as well as suffixes and
- * nicknames.</p>
- *
- * <p>The {@link com.tupilabs.human_name_parser.Name} is a object that encapsulates the name
- * {@code String} but that also contains the logic for handling the Regexes.</p>
- *
- * <p>The code organization and logic are mirrored from the PHP original library, so porting
- * improvements is not very complicated, and users comfortable with the prior library won't have
- * a hard time getting used to this Java port.</p>
- *
- * @since 0.1
+ * This is completely different from the original port from PHP.
+ * @see com.tupilabs.human_name_parser.HumanNameParser to parse names, which is just tokenizes and assigns labels
+ * If you want it to move the tagged tokens into segments then call
+ * {@link com.tupilabs.human_name_parser.ParsedName#toSegmented()}
  */
 package com.tupilabs.human_name_parser;

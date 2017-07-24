@@ -28,7 +28,7 @@
   <groupId>com.github.steveash.hnp</groupId>
   <artifactId>human-name-parser</artifactId>
 
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2</version>
 
   <name>HumanNameParser.java</name>
   <description>HumanNameParser.java, a Java port of HumanNameParser.php. Parser for human names in Java, all credit goes
@@ -58,7 +58,7 @@
   <properties>
     <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
     <junit.version>4.12</junit.version>
-    <commons.lang.version>2.6</commons.lang.version>
+    <commons.lang.version>3.5</commons.lang.version>
   </properties>
 
   <developers>
@@ -153,9 +153,14 @@
   <dependencies>
     <!-- [lang] -->
     <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
+      <artifactId>commons-lang3</artifactId>
+      <groupId>org.apache.commons</groupId>
       <version>${commons.lang.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>19.0</version>
     </dependency>
     <!-- testing -->
     <dependency>
