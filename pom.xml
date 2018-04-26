@@ -24,22 +24,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.github.steveash.hnp</groupId>
+  <modelVersion>4.0.1</modelVersion>
+  <groupId>tlm.us</groupId>
   <artifactId>human-name-parser</artifactId>
 
-  <version>0.2</version>
+  <version>0.2.1</version>
 
   <name>HumanNameParser.java</name>
   <description>HumanNameParser.java, a Java port of HumanNameParser.php. Parser for human names in Java, all credit goes
     to @jasonpriem
   </description>
-  <url>https://github.com/steveash/HumanNameParser.java</url>
-  <inceptionYear>2015</inceptionYear>
+  <url>https://github.com/cr75/HumanNameParser.java</url>
+  <inceptionYear>2018</inceptionYear>
 
   <organization>
-    <url>http://www.tupilabs.com</url>
-    <name>TupiLabs</name>
+    <name>TLM Software</name>
   </organization>
 
   <licenses>
@@ -63,11 +62,10 @@
 
   <developers>
       <developer>
-        <email>kinow@apache.org</email>
-        <id>kinow</id>
-        <name>Bruno P. Kinoshita</name>
-        <timezone>-3</timezone>
-        <url>http://www.kinoshita.eti.br</url>
+        <email>kevin@tlm.us</email>
+        <id>kevin</id>
+        <name>Kevin Carter</name>
+        <timezone>-4</timezone>
         <roles>
           <role>developer</role>
         </roles>
@@ -77,19 +75,19 @@
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/tupilabs/HumanNameParser.java/issues</url>
+    <url>https://github.com/cr75/HumanNameParser.java</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/tupilabs/HumanNameParser.java.git</connection>
-    <developerConnection>scm:git:git@github.com:tupilabs/HumanNameParser.java.git</developerConnection>
-    <url>https://github.com/tupilabs/HumanNameParser.java</url>
+    <connection>scm:git:git://github.com/cr75/HumanNameParser.java.git</connection>
+    <developerConnection>scm:git:git@github.com:cr75/HumanNameParser.java.git</developerConnection>
+    <url>https://github.com/cr75/HumanNameParser.java</url>
   </scm>
 
   <distributionManagement>
     <site>
       <id>human-name-parser-github-site</id>
-      <url>gitsite:git@github.com/tupilabs/HumanNameParser.java.git</url>
+      <url>gitsite:git@github.com/cr75/HumanNameParser.java.git</url>
     </site>
   </distributionManagement>
 

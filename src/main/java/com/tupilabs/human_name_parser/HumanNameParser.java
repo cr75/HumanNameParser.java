@@ -46,10 +46,10 @@ public class HumanNameParser {
         List<String> salutations1 = Arrays.asList("mr", "master", "mister",
                 "mrs", "miss", "ms", "dr", "prof", "rev", "fr", "judge", "honorable", "hon");
         List<String> suffixes1 = Arrays.asList("jr", "sr", "2", "ii",
-                "iii", "iv", "v", "senior", "junior");
+                "iii", "iv", "v", "senior", "junior", "2d", "2nd", "3d", "3rd", "4th");
         List<String> postnominals1 = Arrays.asList("phd", "ph.d.", "ph.d",
                 "esq", "esquire", "apr", "rph", "pe", "md", "ma", "dmd", "cme",
-                "dds", "cpa", "dvm");
+                "dds", "cpa", "dvm", "rdh", "r.d.h.", "d.d.s.", "d.m.d.");
         List<String> prefixes1 = Arrays.asList("bar", "ben", "bin", "da", "dal",
                 "de la", "de", "del", "der", "di", "ibn", "la", "le",
                 "san", "st", "ste", "van", "van der", "van den", "vel",
