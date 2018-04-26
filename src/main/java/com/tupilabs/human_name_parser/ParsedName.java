@@ -73,7 +73,7 @@ public class ParsedName {
                     result.setNicknames(append(result.getNicknames(), token));
                     break;
                 case Middle:
-                case MiddleInital:
+                case MiddleInitial:
                     result.setMiddle(append(result.getMiddle(), token));
                     break;
                 case Last:

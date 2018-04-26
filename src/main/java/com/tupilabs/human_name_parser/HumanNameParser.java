@@ -109,7 +109,7 @@ public class HumanNameParser {
 
         boolean matchedLast;
         do {
-            matchedLast = chopWithRegex(work, middleInitPat, 0, Label.MiddleInital);
+            matchedLast = chopWithRegex(work, middleInitPat, 0, Label.MiddleInitial);
             matchedLast |= chopWithRegex(work, middlePat, 0, Label.Middle);
         } while (matchedLast);
 

@@ -9,7 +9,7 @@ public enum Label {
     First,
     FirstInitial,
     Middle,
-    MiddleInital,
+    MiddleInitial,
     Last,
     Postnominal,
     Suffix,

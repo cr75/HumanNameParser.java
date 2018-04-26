@@ -26,7 +26,7 @@ public class HumanNameParserTest {
         HumanNameParser p1 = new HumanNameParser(true);
         ParsedName name1 = p1.parse("STEVE M ASH");
         assertEquals(Arrays.asList("STEVE", "M", "ASH"), name1.getTokens());
-        assertEquals(Arrays.asList(Label.First, Label.MiddleInital, Label.Last), name1.getLabels());
+        assertEquals(Arrays.asList(Label.First, Label.MiddleInitial, Label.Last), name1.getLabels());
 
         SegmentedName seg1 = name1.toSegmented();
         assertEquals("STEVE", seg1.getFirst());
@@ -39,12 +39,27 @@ public class HumanNameParserTest {
         HumanNameParser p1 = new HumanNameParser(true);
         ParsedName name1 = p1.parse("STEVE M R ASH");
         assertEquals(Arrays.asList("STEVE", "M", "R", "ASH"), name1.getTokens());
-        assertEquals(Arrays.asList(Label.First, Label.MiddleInital, Label.MiddleInital, Label.Last), name1.getLabels());
+        assertEquals(Arrays.asList(Label.First, Label.MiddleInitial, Label.MiddleInitial, Label.Last), name1.getLabels());
 
         SegmentedName seg1 = name1.toSegmented();
         assertEquals("STEVE", seg1.getFirst());
         assertEquals("M R", seg1.getMiddle());
         assertEquals("ASH", seg1.getLast());
+    }
+    
+    @Test
+    public void shouldParseSimple3() throws Exception {
+        // 
+        HumanNameParser p1 = new HumanNameParser(true);
+        ParsedName name1 = p1.parse("SHARON A. WALGREEN, RDH");
+        assertEquals(Arrays.asList("SHARON", "A.", "WALGREEN", "RDH"), name1.getTokens());
+        assertEquals(Arrays.asList(Label.First, Label.MiddleInitial, Label.Last, Label.Postnominal), name1.getLabels());
+
+        SegmentedName seg1 = name1.toSegmented();
+        assertEquals("SHARON", seg1.getFirst());
+        assertEquals("A.", seg1.getMiddle());
+        assertEquals("WALGREEN", seg1.getLast());
+        assertEquals("RDH", seg1.getPostnominal());
     }
 
     @Test
